@@ -12,10 +12,10 @@ from datetime import datetime, timedelta
 def connect_to_database():
     try:
         connection = mysql.connector.connect(
-            host="localhost",
-            user="ekmal",
-            password="EkmalTM39624",
-            database="facesense"
+            host=LOCAL_HOST,
+            user=USER,
+            password=PASS,
+            database=DB_NAME
         )
         print("Database connection established")
         return connection
